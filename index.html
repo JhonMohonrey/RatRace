@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohonrey</title>
+    <link rel="stylesheet" href="./design.css">
+    <script src="./mainScript.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="img"></div>
+        <h3>Cash: &#8369; <span id="totalCash"></span></h3>
+    </div>
+
+    <div class="Date menu-list">
+        <h3>
+            Age: <span id="age"></span> | Date <span id="year"></span>/<span id="date">15</span>/<span id="month"></span> 
+        </h3>
+    </div>
+
+    <div class="menu-list">
+        <div class="menu-container">
+            <div class="popUp hide">Reset Are You Sure?
+                <div>
+                    <button onclick="yesReset()">Yes</button>
+                    <button onclick="noReset()">No</button>
+                </div>
+              
+            </div>
+           
+            <button onclick="work()">Work</button>
+            <button onclick="school()">school</button>
+            <button onclick="bank()">Bank</button>
+            <button onclick="RealEstate()">Real Estate</button>
+            <button onclick="next()">Next</button>
+            <button class="resetButton11">Reset</button>
+        </div>
+    </div>
+
+    <div class="work-container hideDiv">
+        <h1>Work</h1>
+
+        <div class="pickCareer">
+            <button class="degree notActive" onclick="degreeBtn()">Degree Holder</button>
+            <button class="under" onclick="underBtn()">Under Graduate</button>
+        </div>
+
+        <div class="degreeHolder">
+            <h1>Degree Holder</h1>
+
+            <h3>Salary: &#8369; <span id="degree-salary"></span></h3>
+            <h3>Income Tax: 40%</h3>
+            <h3>Level: <span id="degree-level"></span></h3>
+            <h3>Progress: <span id="degree-progress"></span></h3>
+
+            <button class="degreeQuit" onclick="DegreeQuit()">Quit</button>
+
+            <div class="degree-find-job">
+                <h4>Degree Section</h4>
+                <h1>Find a Job</h1>
+                <button onclick="DegreeFindJob()">Find Job</button>
+
+                <div class="degreeLoading HideLoading">
+                    <div class="loadDegree"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="underGraduate ">
+            <h1>Under Graduate</h1>
+
+            <h3>Salary: &#8369; <span id="under-salary"></span></h3>
+            <h3>Income Tax: 40%</h3>
+            <h3>Level: <span id="under-level"></span></h3>
+            <h3>Progress: <span id="under-progress"></span></h3>
+
+            <button class="underQuit" onclick="UnderQuit()">Quit</button>
+
+            <div class="under-find-job">
+                <h4>Under Graduate</h4>
+                <h1>Find a Job</h1>
+                <button onclick="underGradFindJob()">Find Job</button>
+
+                <div class="underLoading HideLoading">
+                    <div class="load"></div>
+                </div>
+            </div>
+        </div>
+
+        <button id="back" onclick="backToHome()">Back to home</button>
+    </div>
+
+    <div class="bank-container hide-main-bank-container">
+        <h1 class="bant-title">Bank</h1>
+
+        <div class="bank ">
+            <h4>
+                Deposited: &#8369; <span id="Deposited"></span>
+            </h4>
+
+            <h4>
+                Total Debt: &#8369; <span id="total-loan"></span>
+            </h4>
+
+            <h4>
+                Monthly payment: &#8369; <span id="monthly-pay"></span>
+            </h4>
+
+            <div class="deposit-and-withdraw">
+                <button onclick="openDepositedDiv()">Deposited</button>
+                <button onclick="openWithdrawDiv()">Withdraw</button>
+                <button onclick="getLoan()">Loan</button>
+                <button onclick="PayLoan()">Pay Loan</button>
+            </div>
+
+            <div class="deposited-Container hide-deposited-div">
+                <input type="number" placeholder="Enter the amount" id="amount-deposited">
+                
+                <div class="buttons-percentage-withdraw">
+                    <button class="perBtn 1">10%</button>
+                    <button class="perBtn 2">20%</button>
+                    <button class="perBtn 3">30%</button>
+                    <button class="perBtn 4">40%</button>
+                    <button class="perBtn 5">50%</button>
+                    <button class="perBtn 6">60%</button>
+                    <button class="perBtn 7">70%</button>
+                    <button class="perBtn 8">80%</button>
+                    <button class="perBtn 9">90%</button>
+                    <button class="perBtn 10">100%</button>
+                </div>
+
+                <div>
+                    <button class="back-btn-deposited-div">Back</button>
+                    <button class="withdraw-btn-deposited-div">Deposited</button>
+                </div>
+          
+            </div>
+
+            <div class="withdraw-container hide-deposited-div">
+                <input type="number" placeholder="Enter the amount" id="amount-withdraw">
+                
+                <div class="withdraw-buttons-percentage">
+                    <button class="withdrawBtn 1">10%</button>
+                    <button class="withdrawBtn 2">20%</button>
+                    <button class="withdrawBtn 3">30%</button>
+                    <button class="withdrawBtn 4">40%</button>
+                    <button class="withdrawBtn 5">50%</button>
+                    <button class="withdrawBtn 6">60%</button>
+                    <button class="withdrawBtn 7">70%</button>
+                    <button class="withdrawBtn 8">80%</button>
+                    <button class="withdrawBtn 9">90%</button>
+                    <button class="withdrawBtn 10">100%</button>
+                </div>
+
+                <div>
+                    <button class="back-btn-withdraw-div">Back</button>
+                    <button class="withdraw-btn-withdraw-div">Withdraw</button>
+                </div>
+          
+            </div>
+
+            <div class="loan-container hide-deposited-div">
+                <span class="max-loan hideMax"></span>
+                <div class="loan-div">
+                    <input type="number" placeholder="Enter amount" id="total-loan-amount">
+                    <label for="yearterm">Loan term (Years) 1 - 30 </label>
+                    <input type="number" placeholder="Loan term 5% Interest per year" id="years-term"/>
+                    
+                    <div>
+                        <button onclick="takeLoanBack()">Back</button>
+                        <button onclick="takeLoan()">Take Loan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payLoan-container hide-deposited-div">
+                <input type="number" placeholder="Enter Amount" id="payAmount">
+                <div class="PayPercentage">
+                    <button class="payPercentage 1">10%</button>
+                    <button class="payPercentage 2">20%</button>
+                    <button class="payPercentage 3">30%</button>
+                    <button class="payPercentage 4">40%</button>
+                    <button class="payPercentage 5">50%</button>
+                    <button class="payPercentage 6">60%</button>
+                    <button class="payPercentage 7">70%</button>
+                    <button class="payPercentage 8">80%</button>
+                    <button class="payPercentage 9">90%</button>
+                    <button class="payPercentage 10">100%</button>
+                </div>
+
+                <div class="payAndBackBtn">
+                    <button onclick="BackPayLoanCon()">Back</button>
+                    <button onclick="payOff()">Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="BackToHomeBank">Back to Home</button>
+    </div>
+
+    <div class="school-container hide-main-school-container">
+        <h1>College</h1>
+
+        <div class="college-div">
+            <div class="enroll-div">
+                <span class="feedBack hideFeed">Sorry You Don't Have Money</span>
+                <h3>Course: Business</h3>
+                <h3>Price: &#8369; <span id="enroll-price">700000</span></h3>
+                <h3>Course Length: 4 years course</h3>
+                <button onclick="enrollBtn()">Enroll Now</button>
+            </div>
+
+            <div class="CollegeContainer">
+                <h3>Major in Business</h3>
+                <h3>Course Length: 4 years</h3>
+                <h3>
+                    Year level: <span id="collegeCurrent"></span> year
+                </h3>
+                <h3>
+                    Progress <span id="progressCollege"></span>
+                </h3>
+
+                <div class="diploma hideDiploma">
+                    <h1>Diploma</h1>
+                    <p>Congratulation You Finish College Education</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="collegeBackToHome">Back to Home</button>
+    </div>
+
+    <div class="realEstate HideMainRealEstate">
+        <h1>Real Estate</h1>
+
+        <div class="menuRealEstate">
+            <button class="buyProperty">Buy Property</button>
+            <button class="OwnProperty opacity">Own Property</button>
+        </div>
+
+        <div class="BuyProperty ">
+            <span class="feedBackResult feedHide">Sorry You Don't Have Enough Money</span>
+            <span class="successFeed hideSuccessFeed">You Both This Property</span>
+
+            <h3 id="marketPropertyName">Property Name</h3>
+            <h3>Price: &#8369; <span id="MarketPropertyPrice"></span></h3>
+            <h3>Rent: <span id="marketRent"></span></h3>
+            <div class="buySectionRealEstate">
+                <button onclick="buyProperty()">Buy</button>
+                <div>
+                    <button onclick="buyPrevButton()">Prev</button>
+                    <button onclick="buyNextButton()">Next</button>
+                </div>
+          
+            </div>
+        </div>
+
+        <div class="ownProperty hideContainerData">
+            <div class="noProperty ">
+                <h2>You Don't Have Property!</h2>
+            </div>
+
+            <div class="ownInsideData">
+                <h3 id="ownPropertyName"></h3>
+                <h3>Price: <span id="ownPropertyPrice"></span></h3>
+                <h3>Property ID: <span id="propertyID"></span></h3>
+                <h3>Monthly Income: <span id="rendOWnProperty"></span></h3>
+                <h3>Property count: <span id="countProperty"></span></h3>
+                
+                <div id="nextAndPrevBtn">
+                    <div>
+                        <button class="option">Option</button>
+                        <button class="OwnSell hideOwnButton">Sell</button>
+                    </div>
+                   
+                    <div>
+                        <button onclick="ownPrev()">Prev</button>
+                        <button onclick="ownNext()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="RealEstateBackToHome">Back To Home</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1019 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #8f41a5;
+}
+
+:root {
+  --primary-background-color: #8f41a5;
+  --primary-button-color: #d4d097;
+}
+
+.header {
+  border: 3px solid black;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #610e78;
+}
+
+.header .img {
+  width: 33px;
+  height: 33px;
+  background: #d4d097;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.header h3 {
+  background: #d4d097;
+  width: 80%;
+  font-family: arial;
+  padding: 5px;
+  margin: 0;
+  border: 3px solid black;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.menu-list {
+  background: #8f41a5;
+  border-top: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: none;
+}
+
+.menu-list .menu-container {
+  padding: 10px;
+  width: 90%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.menu-list .menu-container .resetButton11 {
+  background: #780000;
+  color: white;
+}
+
+.menu-list .menu-container .popUp {
+  background-color: #7c7957;
+  position: absolute;
+  padding: 10px;
+  font-family: arial;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid black;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-list .menu-container .popUp button {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  margin: 20px 10px;
+  margin-bottom: 5px;
+}
+
+.menu-list .menu-container .hide {
+  display: none;
+}
+
+.menu-list .menu-container button {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 3px solid black;
+  font-weight: bold;
+  font-size: 20px;
+  background: #d4d097;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  cursor: pointer;
+}
+
+.work-container {
+  position: absolute;
+  background: #8f41a5;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-container #back {
+  background: var(--primary-button-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.work-container #back:active {
+  opacity: .8;
+}
+
+.work-container h1 {
+  font-family: arial;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+
+.work-container .pickCareer {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-container .pickCareer button {
+  background: var(--primary-button-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.work-container .pickCareer button:active {
+  opacity: .8;
+}
+
+.work-container .pickCareer .notActive {
+  opacity: .8;
+  border: none;
+}
+
+.hideDiv {
+  display: none;
+}
+
+.degreeHolder, .underGraduate {
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: var(--primary-button-color);
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.degreeHolder h1, .underGraduate h1 {
+  color: black;
+}
+
+.degreeHolder h3, .underGraduate h3 {
+  background: white;
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  border: 3px solid black;
+  color: black;
+  font-family: Arial;
+  margin: 5px 0;
+}
+
+.degreeHolder .underQuit, .degreeHolder .degreeQuit, .underGraduate .underQuit, .underGraduate .degreeQuit {
+  background: red;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.degreeHolder .underQuit:active, .degreeHolder .degreeQuit:active, .underGraduate .underQuit:active, .underGraduate .degreeQuit:active {
+  opacity: .8;
+}
+
+.hideDegree {
+  display: none;
+}
+
+.under-find-job, .degree-find-job {
+  position: absolute;
+  inset: -2.9px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: #a4669c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+}
+
+.under-find-job h4, .degree-find-job h4 {
+  font-family: arial;
+  margin: 2px 0;
+  margin-top: 15px;
+}
+
+.under-find-job button, .degree-find-job button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 3px solid black;
+  font-weight: bold;
+  background: var(--primary-button-color);
+}
+
+.under-find-job button:active, .degree-find-job button:active {
+  opacity: .9;
+}
+
+.under-find-job .underLoading, .under-find-job .degreeLoading, .degree-find-job .underLoading, .degree-find-job .degreeLoading {
+  border: 2px solid black;
+  margin-top: 20px;
+  height: 20px;
+  width: 90%;
+  position: relative;
+}
+
+.under-find-job .underLoading .load, .under-find-job .underLoading .loadDegree, .under-find-job .degreeLoading .load, .under-find-job .degreeLoading .loadDegree, .degree-find-job .underLoading .load, .degree-find-job .underLoading .loadDegree, .degree-find-job .degreeLoading .load, .degree-find-job .degreeLoading .loadDegree {
+  position: absolute;
+  height: 100%;
+  background: var(--primary-button-color);
+}
+
+.under-find-job .HideLoading, .degree-find-job .HideLoading {
+  display: none;
+}
+
+.findJobHide {
+  display: none;
+}
+
+.bank-container {
+  position: absolute;
+  inset: 0;
+  background: var(--primary-background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank-container .bant-title {
+  color: white;
+  margin: 5px 0;
+  text-align: center;
+  font-family: arial;
+}
+
+.bank-container .bank {
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  background: #6c277f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: 10px;
+  padding-top: 8px;
+  position: relative;
+  min-width: 360px;
+}
+
+.bank-container .bank h4 {
+  border: 3px solid black;
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px 5px;
+  background: var(--primary-button-color);
+  margin: 5px 0;
+  font-family: arial;
+}
+
+.bank-container .bank .deposit-and-withdraw {
+  margin: 10px 0;
+}
+
+.bank-container .bank .deposit-and-withdraw button {
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: var(--primary-button-color);
+}
+
+.bank-container .bank .deposit-and-withdraw button:active {
+  opacity: .8;
+}
+
+.bank-container .bank .deposited-Container, .bank-container .bank .withdraw-container, .bank-container .bank .loan-container, .bank-container .bank .payLoan-container {
+  position: absolute;
+  background: var(--primary-background-color);
+  inset: -1.8px;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank-container .bank .deposited-Container input, .bank-container .bank .withdraw-container input, .bank-container .bank .loan-container input, .bank-container .bank .payLoan-container input {
+  margin: 10px 0;
+  width: 85%;
+  height: 30px;
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.bank-container .bank .deposited-Container .back-btn-deposited-div, .bank-container .bank .deposited-Container .withdraw-btn-deposited-div, .bank-container .bank .deposited-Container .back-btn-withdraw-div, .bank-container .bank .deposited-Container .withdraw-btn-withdraw-div, .bank-container .bank .withdraw-container .back-btn-deposited-div, .bank-container .bank .withdraw-container .withdraw-btn-deposited-div, .bank-container .bank .withdraw-container .back-btn-withdraw-div, .bank-container .bank .withdraw-container .withdraw-btn-withdraw-div, .bank-container .bank .loan-container .back-btn-deposited-div, .bank-container .bank .loan-container .withdraw-btn-deposited-div, .bank-container .bank .loan-container .back-btn-withdraw-div, .bank-container .bank .loan-container .withdraw-btn-withdraw-div, .bank-container .bank .payLoan-container .back-btn-deposited-div, .bank-container .bank .payLoan-container .withdraw-btn-deposited-div, .bank-container .bank .payLoan-container .back-btn-withdraw-div, .bank-container .bank .payLoan-container .withdraw-btn-withdraw-div {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: var(--primary-button-color);
+}
+
+.bank-container .bank .deposited-Container .back-btn-deposited-div:active, .bank-container .bank .deposited-Container .withdraw-btn-deposited-div:active, .bank-container .bank .deposited-Container .back-btn-withdraw-div:active, .bank-container .bank .deposited-Container .withdraw-btn-withdraw-div:active, .bank-container .bank .withdraw-container .back-btn-deposited-div:active, .bank-container .bank .withdraw-container .withdraw-btn-deposited-div:active, .bank-container .bank .withdraw-container .back-btn-withdraw-div:active, .bank-container .bank .withdraw-container .withdraw-btn-withdraw-div:active, .bank-container .bank .loan-container .back-btn-deposited-div:active, .bank-container .bank .loan-container .withdraw-btn-deposited-div:active, .bank-container .bank .loan-container .back-btn-withdraw-div:active, .bank-container .bank .loan-container .withdraw-btn-withdraw-div:active, .bank-container .bank .payLoan-container .back-btn-deposited-div:active, .bank-container .bank .payLoan-container .withdraw-btn-deposited-div:active, .bank-container .bank .payLoan-container .back-btn-withdraw-div:active, .bank-container .bank .payLoan-container .withdraw-btn-withdraw-div:active {
+  opacity: .8;
+}
+
+.bank-container .bank .deposited-Container .buttons-percentage-withdraw, .bank-container .bank .deposited-Container .withdraw-buttons-percentage, .bank-container .bank .withdraw-container .buttons-percentage-withdraw, .bank-container .bank .withdraw-container .withdraw-buttons-percentage, .bank-container .bank .loan-container .buttons-percentage-withdraw, .bank-container .bank .loan-container .withdraw-buttons-percentage, .bank-container .bank .payLoan-container .buttons-percentage-withdraw, .bank-container .bank .payLoan-container .withdraw-buttons-percentage {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.bank-container .bank .deposited-Container .buttons-percentage-withdraw button, .bank-container .bank .deposited-Container .withdraw-buttons-percentage button, .bank-container .bank .withdraw-container .buttons-percentage-withdraw button, .bank-container .bank .withdraw-container .withdraw-buttons-percentage button, .bank-container .bank .loan-container .buttons-percentage-withdraw button, .bank-container .bank .loan-container .withdraw-buttons-percentage button, .bank-container .bank .payLoan-container .buttons-percentage-withdraw button, .bank-container .bank .payLoan-container .withdraw-buttons-percentage button {
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  font-weight: bold;
+  background: var(--primary-button-color);
+}
+
+.bank-container .bank .deposited-Container .buttons-percentage-withdraw button:active, .bank-container .bank .deposited-Container .withdraw-buttons-percentage button:active, .bank-container .bank .withdraw-container .buttons-percentage-withdraw button:active, .bank-container .bank .withdraw-container .withdraw-buttons-percentage button:active, .bank-container .bank .loan-container .buttons-percentage-withdraw button:active, .bank-container .bank .loan-container .withdraw-buttons-percentage button:active, .bank-container .bank .payLoan-container .buttons-percentage-withdraw button:active, .bank-container .bank .payLoan-container .withdraw-buttons-percentage button:active {
+  opacity: .8;
+}
+
+.bank-container .bank .deposited-Container .loan-div, .bank-container .bank .withdraw-container .loan-div, .bank-container .bank .loan-container .loan-div, .bank-container .bank .payLoan-container .loan-div {
+  width: 90%;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank-container .bank .deposited-Container .loan-div input, .bank-container .bank .withdraw-container .loan-div input, .bank-container .bank .loan-container .loan-div input, .bank-container .bank .payLoan-container .loan-div input {
+  width: 90%;
+  height: 20px;
+  margin-top: 0;
+}
+
+.bank-container .bank .deposited-Container .loan-div label, .bank-container .bank .withdraw-container .loan-div label, .bank-container .bank .loan-container .loan-div label, .bank-container .bank .payLoan-container .loan-div label {
+  width: 90%;
+  height: 20px;
+  font-family: arial;
+  color: white;
+}
+
+.bank-container .bank .deposited-Container .loan-div button, .bank-container .bank .withdraw-container .loan-div button, .bank-container .bank .loan-container .loan-div button, .bank-container .bank .payLoan-container .loan-div button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 3px solid black;
+  font-weight: bold;
+  background: var(--primary-button-color);
+  margin: 0 5px;
+}
+
+.bank-container .bank .deposited-Container .loan-div button:active, .bank-container .bank .withdraw-container .loan-div button:active, .bank-container .bank .loan-container .loan-div button:active, .bank-container .bank .payLoan-container .loan-div button:active {
+  opacity: .8;
+}
+
+.bank-container .bank .deposited-Container .payAndBackBtn, .bank-container .bank .withdraw-container .payAndBackBtn, .bank-container .bank .loan-container .payAndBackBtn, .bank-container .bank .payLoan-container .payAndBackBtn {
+  margin-top: 5px;
+}
+
+.bank-container .bank .deposited-Container .payAndBackBtn button, .bank-container .bank .withdraw-container .payAndBackBtn button, .bank-container .bank .loan-container .payAndBackBtn button, .bank-container .bank .payLoan-container .payAndBackBtn button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 3px solid black;
+  font-weight: bold;
+  background: var(--primary-button-color);
+  margin: 0 5px;
+}
+
+.bank-container .bank .deposited-Container .payAndBackBtn button:active, .bank-container .bank .withdraw-container .payAndBackBtn button:active, .bank-container .bank .loan-container .payAndBackBtn button:active, .bank-container .bank .payLoan-container .payAndBackBtn button:active {
+  opacity: .8;
+}
+
+.bank-container .bank .deposited-Container .PayPercentage, .bank-container .bank .withdraw-container .PayPercentage, .bank-container .bank .loan-container .PayPercentage, .bank-container .bank .payLoan-container .PayPercentage {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 5px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+
+.bank-container .bank .deposited-Container .PayPercentage button, .bank-container .bank .withdraw-container .PayPercentage button, .bank-container .bank .loan-container .PayPercentage button, .bank-container .bank .payLoan-container .PayPercentage button {
+  border-radius: 5px;
+  border: 3px solid black;
+  font-weight: bold;
+  background: var(--primary-button-color);
+  margin: 0 5px;
+}
+
+.bank-container .bank .deposited-Container .PayPercentage button:active, .bank-container .bank .withdraw-container .PayPercentage button:active, .bank-container .bank .loan-container .PayPercentage button:active, .bank-container .bank .payLoan-container .PayPercentage button:active {
+  opacity: .8;
+}
+
+.bank-container .bank .hide-deposited-div {
+  display: none;
+}
+
+.bank-container .BackToHomeBank {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: var(--primary-button-color);
+  margin-top: 10px;
+}
+
+.bank-container .BackToHomeBank:active {
+  opacity: .8;
+}
+
+.hide-main-bank-container {
+  display: none;
+}
+
+.max-loan {
+  background: #400089;
+  font-family: arial;
+  font-size: 20px;
+  position: absolute;
+  color: white;
+  padding: 5px;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid black;
+  top: 20px;
+}
+
+.hideMax {
+  display: none;
+}
+
+.school-container {
+  position: absolute;
+  inset: 0;
+  background: var(--primary-background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.school-container button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin-top: 10px;
+  background: var(--primary-button-color);
+  font-weight: bold;
+}
+
+.school-container button:active {
+  opacity: .8;
+}
+
+.school-container h1 {
+  color: white;
+  font-family: arial;
+  margin: 5px;
+}
+
+.school-container .college-div {
+  border: 3px solid black;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+  background: #a36eb7;
+  position: relative;
+}
+
+.school-container .college-div .enroll-div {
+  position: absolute;
+  inset: -2px;
+  background: #73337b;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+}
+
+.school-container .college-div .enroll-div .feedBack {
+  position: absolute;
+  background: black;
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.school-container .college-div .enroll-div .hideFeed {
+  display: none;
+}
+
+.school-container .college-div .enroll-div h3 {
+  margin: 0;
+  font-family: arial;
+  background: var(--primary-button-color);
+  padding: 5px;
+  width: 90%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.school-container .college-div .enroll-div button {
+  padding: 5px 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--primary-button-color);
+  font-weight: bold;
+}
+
+.school-container .college-div .enroll-div button:active {
+  opacity: .8;
+}
+
+.school-container .college-div .hideEnroll {
+  display: none;
+}
+
+.school-container .college-div .CollegeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 10px;
+  padding-top: 10px;
+}
+
+.school-container .college-div .CollegeContainer h3 {
+  margin: 0;
+  font-family: arial;
+  background: var(--primary-button-color);
+  padding: 5px;
+  width: 90%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.school-container .college-div .CollegeContainer .diploma {
+  background: #6e476a;
+  position: absolute;
+  inset: -2px;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.school-container .college-div .CollegeContainer .diploma h1 {
+  margin-top: 20px;
+}
+
+.school-container .college-div .CollegeContainer .diploma p {
+  font-family: arial;
+  color: white;
+}
+
+.school-container .college-div .CollegeContainer .hideDiploma {
+  display: none;
+}
+
+.hide-main-school-container {
+  display: none;
+}
+
+.realEstate {
+  position: absolute;
+  inset: 0;
+  background: var(--primary-background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.realEstate .menuRealEstate {
+  background: #94648d;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.realEstate .menuRealEstate .buyProperty, .realEstate .menuRealEstate .OwnProperty {
+  padding: 20px 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: var(--primary-button-color);
+}
+
+.realEstate .menuRealEstate .buyProperty:active, .realEstate .menuRealEstate .OwnProperty:active {
+  opacity: .8;
+}
+
+.realEstate h1 {
+  color: white;
+  margin: 5px 0;
+  text-align: center;
+  font-family: arial;
+}
+
+.realEstate #RealEstateBackToHome {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: var(--primary-button-color);
+  margin-top: 20px;
+}
+
+.realEstate #RealEstateBackToHome:active {
+  opacity: .8;
+}
+
+.realEstate .BuyProperty, .realEstate .ownProperty {
+  border: 3px solid black;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 10px;
+  background: #94648d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+
+.realEstate .BuyProperty .successFeed, .realEstate .ownProperty .successFeed {
+  position: absolute;
+  background: #009a00;
+  font-size: 25px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.realEstate .BuyProperty .hideSuccessFeed, .realEstate .ownProperty .hideSuccessFeed {
+  display: none;
+}
+
+.realEstate .BuyProperty .ownInsideData, .realEstate .ownProperty .ownInsideData {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.realEstate .BuyProperty .ownInsideData #nextAndPrevBtn, .realEstate .ownProperty .ownInsideData #nextAndPrevBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.realEstate .BuyProperty .ownInsideData #nextAndPrevBtn .hideOwnButton, .realEstate .ownProperty .ownInsideData #nextAndPrevBtn .hideOwnButton {
+  display: none;
+}
+
+.realEstate .BuyProperty .ownInsideData h3, .realEstate .ownProperty .ownInsideData h3 {
+  background: var(--primary-button-color);
+  width: 90%;
+  padding: 5px;
+  font-family: arial;
+  border-radius: 10px;
+  border: 3px solid black;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+  margin: 5px 0;
+}
+
+.realEstate .BuyProperty h3, .realEstate .ownProperty h3 {
+  background: var(--primary-button-color);
+  width: 90%;
+  padding: 5px;
+  font-family: arial;
+  border-radius: 10px;
+  border: 3px solid black;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+  margin: 5px 0;
+}
+
+.realEstate .BuyProperty button, .realEstate .ownProperty button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: var(--primary-button-color);
+  margin: 10px;
+}
+
+.realEstate .BuyProperty button:active, .realEstate .ownProperty button:active {
+  opacity: .8;
+}
+
+.realEstate .BuyProperty .buySectionRealEstate, .realEstate .ownProperty .buySectionRealEstate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+}
+
+.realEstate .BuyProperty .noProperty, .realEstate .ownProperty .noProperty {
+  background: #94648d;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.realEstate .BuyProperty .noProperty h2, .realEstate .ownProperty .noProperty h2 {
+  color: white;
+  font-family: arial;
+}
+
+.realEstate .BuyProperty .hideNoProperty, .realEstate .ownProperty .hideNoProperty {
+  display: none;
+}
+
+.realEstate .BuyProperty .feedBackResult, .realEstate .ownProperty .feedBackResult {
+  position: absolute;
+  background: #910000;
+  color: white;
+  font-size: 20px;
+  font-family: arial;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid black;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+  z-index: 12;
+}
+
+.realEstate .BuyProperty .feedHide, .realEstate .ownProperty .feedHide {
+  display: none;
+}
+
+.realEstate .hideContainerData {
+  display: none;
+}
+
+.realEstate .opacity {
+  opacity: .5;
+}
+
+.HideMainRealEstate {
+  display: none;
+}
+
+.Date h3 {
+  margin: 0;
+  font-family: arial;
+  color: white;
+}
+
+.resetButton11 {
+  background: red;
+  font-size: 10px;
+}
+/*# sourceMappingURL=design.css.map */
